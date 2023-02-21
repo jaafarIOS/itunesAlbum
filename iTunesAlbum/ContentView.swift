@@ -8,19 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                GeometryReader{ Geometry in
+                }.background(.purple)
+                
+                TabView {
+                    Albumview()
+                        .tabItem {
+                            Label("Albums", systemImage: "rectangle.stack.badge.play.fill")
+                        }
+                    
+                    Favorite()
+                        .tabItem {
+                            Label("Favorite", systemImage: "star.square.fill")
+                        }
+                }
+                .onAppear {
+                    // Here you'll perform step 3
+                    AlbumAPI().fetchData { results in
+                        print("Results: \(results)")
+                    }
+                }
+            }
         }
-        .padding()
     }
 }
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+       
     }
 }
+

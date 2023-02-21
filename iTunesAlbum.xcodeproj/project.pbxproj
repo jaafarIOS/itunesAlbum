@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0280ADBA299FD95400D124D7 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280ADB9299FD95400D124D7 /* ButtonView.swift */; };
 		02B4D768299BC22A00088B23 /* iTunesAlbumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D767299BC22A00088B23 /* iTunesAlbumApp.swift */; };
 		02B4D76A299BC22A00088B23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D769299BC22A00088B23 /* ContentView.swift */; };
 		02B4D76C299BC22C00088B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B4D76B299BC22C00088B23 /* Assets.xcassets */; };
 		02B4D76F299BC22C00088B23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B4D76E299BC22C00088B23 /* Preview Assets.xcassets */; };
+		02B4D776299BC24700088B23 /* AlbumAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D775299BC24700088B23 /* AlbumAPI.swift */; };
+		02B4D77B299BC2B800088B23 /* FeedContiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D77A299BC2B800088B23 /* FeedContiner.swift */; };
+		02B4D77D299BC2D900088B23 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D77C299BC2D900088B23 /* ViewModel.swift */; };
+		02B4D77F299BC2FD00088B23 /* Albumview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D77E299BC2FD00088B23 /* Albumview.swift */; };
+		02B4D781299BC32300088B23 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D780299BC32300088B23 /* Favorite.swift */; };
+		02B4D786299BC37B00088B23 /* ResultContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D784299BC37B00088B23 /* ResultContainer.xcdatamodeld */; };
+		02B4D788299BE9DD00088B23 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4D787299BE9DD00088B23 /* detailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0280ADB9299FD95400D124D7 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		02B4D764299BC22A00088B23 /* iTunesAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B4D767299BC22A00088B23 /* iTunesAlbumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAlbumApp.swift; sourceTree = "<group>"; };
 		02B4D769299BC22A00088B23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02B4D76B299BC22C00088B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B4D76E299BC22C00088B23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02B4D775299BC24700088B23 /* AlbumAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumAPI.swift; sourceTree = "<group>"; };
+		02B4D77A299BC2B800088B23 /* FeedContiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedContiner.swift; sourceTree = "<group>"; };
+		02B4D77C299BC2D900088B23 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		02B4D77E299BC2FD00088B23 /* Albumview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albumview.swift; sourceTree = "<group>"; };
+		02B4D780299BC32300088B23 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		02B4D785299BC37B00088B23 /* ResultContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResultContainer.xcdatamodel; sourceTree = "<group>"; };
+		02B4D787299BE9DD00088B23 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +67,15 @@
 		02B4D766299BC22A00088B23 /* iTunesAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				02B4D779299BC27F00088B23 /* View */,
+				02B4D778299BC26C00088B23 /* ViewModel */,
+				02B4D777299BC26200088B23 /* Model */,
 				02B4D767299BC22A00088B23 /* iTunesAlbumApp.swift */,
 				02B4D769299BC22A00088B23 /* ContentView.swift */,
 				02B4D76B299BC22C00088B23 /* Assets.xcassets */,
 				02B4D76D299BC22C00088B23 /* Preview Content */,
+				02B4D775299BC24700088B23 /* AlbumAPI.swift */,
+				02B4D784299BC37B00088B23 /* ResultContainer.xcdatamodeld */,
 			);
 			path = iTunesAlbum;
 			sourceTree = "<group>";
@@ -65,6 +86,33 @@
 				02B4D76E299BC22C00088B23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02B4D777299BC26200088B23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02B4D77A299BC2B800088B23 /* FeedContiner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02B4D778299BC26C00088B23 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02B4D77C299BC2D900088B23 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02B4D779299BC27F00088B23 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02B4D77E299BC2FD00088B23 /* Albumview.swift */,
+				02B4D787299BE9DD00088B23 /* detailView.swift */,
+				02B4D780299BC32300088B23 /* Favorite.swift */,
+				0280ADB9299FD95400D124D7 /* ButtonView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02B4D77F299BC2FD00088B23 /* Albumview.swift in Sources */,
+				02B4D786299BC37B00088B23 /* ResultContainer.xcdatamodeld in Sources */,
+				0280ADBA299FD95400D124D7 /* ButtonView.swift in Sources */,
+				02B4D781299BC32300088B23 /* Favorite.swift in Sources */,
+				02B4D788299BE9DD00088B23 /* detailView.swift in Sources */,
+				02B4D77D299BC2D900088B23 /* ViewModel.swift in Sources */,
 				02B4D76A299BC22A00088B23 /* ContentView.swift in Sources */,
+				02B4D776299BC24700088B23 /* AlbumAPI.swift in Sources */,
 				02B4D768299BC22A00088B23 /* iTunesAlbumApp.swift in Sources */,
+				02B4D77B299BC2B800088B23 /* FeedContiner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTunesAlbum/Preview Content\"";
+				DEVELOPMENT_TEAM = 49VXLUMLD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -295,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTunesAlbum/Preview Content\"";
+				DEVELOPMENT_TEAM = 49VXLUMLD8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -337,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02B4D784299BC37B00088B23 /* ResultContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02B4D785299BC37B00088B23 /* ResultContainer.xcdatamodel */,
+			);
+			currentVersion = 02B4D785299BC37B00088B23 /* ResultContainer.xcdatamodel */;
+			path = ResultContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 02B4D75C299BC22A00088B23 /* Project object */;
 }

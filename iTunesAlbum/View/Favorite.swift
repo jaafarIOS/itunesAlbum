@@ -8,8 +8,49 @@
 import SwiftUI
 
 struct Favorite: View {
+    @ObservedObject var viewModel: ViewModel = ViewModel()
+    @ObservedObject var vm: CoreDataViewModel = CoreDataViewModel()
+    
+    //@State
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack(spacing: 20){
+                
+                
+                List {
+                    ForEach(vm.saveResults){ entity in
+                        
+                        
+                        NavigationLink(entity.name ?? ""){
+                            detailView(album: entity)
+                            
+                        }
+                        
+                    }//.onDelete(perform: vm.deleteFavorite)
+                    
+                }
+                .listStyle(PlainListStyle())
+                VStack{
+                    Button {
+                        vm.clearAllData()
+                    } label: {
+                        Text("Clear")
+                    }
+                }
+
+            }
+                .onAppear {
+                    vm.fetchResult()
+                    
+                }
+              .navigationTitle("Favorite")
+             .background(Image("watercolor-2681039__480").resizable()
+            .blur(radius: 50))
+           
+            
+            
+        }
+      
     }
 }
 
@@ -18,3 +59,4 @@ struct Favorite_Previews: PreviewProvider {
         Favorite()
     }
 }
+
